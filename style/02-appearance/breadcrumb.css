@@ -1,0 +1,31 @@
+/* -------------------------------------------------面包屑导航样式-------------------------------------------- */
+.protyle-breadcrumb {
+    color: #55555a80;
+    font-size: 14px !important;
+    height: 26px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.protyle-breadcrumb__item svg {
+    height: 14px;
+    width: 14px;
+}
+
+/* 调整面包屑文字颜色 */
+.protyle-breadcrumb__item {
+    color: #55555a4d;
+}
+
+.protyle-breadcrumb__item--active {
+    color: var(--b3-theme-on-background);
+}
+
+.protyle-breadcrumb__item:hover {
+    color: var(--b3-theme-on-background) !important;
+    background-color: rgba(154, 153, 155, .08) !important;
+}
+
+
+/* -------------------------------------------------面包屑导航样式 END-------------------------------------------- */

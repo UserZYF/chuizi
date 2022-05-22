@@ -1,0 +1,25 @@
+/* --------------------------------------------------鼠标选中文本后弹出的工具栏样式------------------------------------- */
+.protyle-toolbar {
+    background-color: white;
+    box-shadow: rgb(0 0 0 / 20%) 0px 4px 20px 0px;
+    border-radius: 2px;
+    padding: 4px;
+}
+
+.protyle-toolbar__item {
+    color: var(--b3-font-color-gray);
+}
+
+.protyle-toolbar__item:hover {
+    color: var(--b3-font-color-hover);
+    background-color: rgba(154, 153, 155, .08);
+    border-radius: #222;
+}
+
+.protyle-toolbar__item--current {
+    color: #222 !important;
+    background-color: rgba(154, 153, 155, .12) !important;
+    border-radius: 2px;
+}
+
+/* --------------------------------------------------鼠标选中文本后弹出的工具栏样式 END------------------------------------- */

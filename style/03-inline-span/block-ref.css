@@ -2,10 +2,9 @@
 
 /* 设置引用块格式 */
 .protyle-wysiwyg [data-node-id] span[data-type='block-ref'] {
-    color: var(--b3-theme-on-background);
-    border-radius: 4px;
     text-decoration: 2px solid #80808080 underline;
     text-underline-offset: 2px;
+    color: inherit;
 }
 
 .protyle-wysiwyg [data-node-id] span[data-type='block-ref']:hover {
@@ -17,13 +16,13 @@
     display: inline-block;
     position: relative;
     background-repeat: no-repeat;
-    background-size: 0.8em 1em;
-    background-image: url('../../src/page3.svg');
-    width: 0.8em;
-    height: 1em;
+    background-size: 1.2em 1.2em;
+    background-image: url('../../src/page2.svg');
+    width: 1.2em;
+    height: 1.2em;
     margin-right: 0.2em;
     margin-left: 5px;
-    top: 0.17em;
+    top: 0.2em;
 }
 
 /* 去掉h1-h6标题上块引用的下划线 */

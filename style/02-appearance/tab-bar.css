@@ -5,39 +5,16 @@ ul.fn__flex.layout-tab-bar {
     background-color: #fffcf6;
 }
 
-
+/* -----------------------------------------normal--------------------------------------------- */
 /* 标签页相关设置 */
 .layout-tab-bar .item {
     position: relative;
     background-color: #fbf7ed;
     flex: none;
     min-width: 12em;
-    border-radius: 2px;
+    border-radius: 3px;
     box-shadow: none;
     margin: 4px 4px 4px 0px;
-    /* border: 0.1em solid transparent; */
-    /* box-sizing: border-box; */
-}
-
-.layout-tab-bar .item:hover {
-    background-color: #fbf7ed !important;
-}
-
-
-.layout-tab-bar .item:first-child {
-    margin-left: 4px;
-}
-
-.layout-tab-bar .item:last-child {
-    margin-right: 4px;
-}
-
-.layout-tab-bar .item:not(:last-child) {
-    box-shadow: none;
-}
-
-.layout__wnd--active .layout-tab-bar .item--focus {
-    box-shadow: inset 0 2px 0 0 transparent !important;
 }
 
 /* 标签页中文字的相关设置 */
@@ -50,16 +27,43 @@ ul.fn__flex.layout-tab-bar {
     color: #55555a4d;
 }
 
+/* 鼠标悬浮时的标签页背景颜色，应该和focus时的背景颜色一致 */
+.layout-tab-bar .item:hover {
+    background-color: #f3eee1 !important;
+    border-radius: 3px !important;
+}
 
+.layout-tab-bar .item:hover .item__text {
+    color: var(--b3-theme-on-background) !important;
+}
 
+/* 首个标签页和最后一个标签页左右都设置适当距离 */
+.layout-tab-bar .item:first-child {
+    margin-left: 4px;
+}
+
+.layout-tab-bar .item:last-child {
+    margin-right: 4px;
+}
+
+/* -----------------------------------------去除默认主题的一些设置--------------------------------------------- */
+
+.layout-tab-bar .item:not(:last-child) {
+    box-shadow: none;
+}
+
+.layout__wnd--active .layout-tab-bar .item--focus {
+    box-shadow: inset 0 2px 0 0 transparent !important;
+}
+
+/* -----------------------------------------focus--------------------------------------------- */
 /* 设置当前标签页样式 */
 .layout-tab-bar .item--focus {
-    /* background-color: #fbf7ed; */
     background-color: #f3eee1;
     box-shadow: none !important;
     min-width: 12em;
     z-index: 1;
-    border-radius: 4px !important;
+    border-radius: 3px !important;
 }
 
 /* 设置当前标签页文字样式 */
@@ -67,6 +71,8 @@ ul.fn__flex.layout-tab-bar {
     color: var(--b3-theme-on-background) !important;
 }
 
+
+/* -----------------------------------------others--------------------------------------------- */
 /* 减小标签页上的emoji大小 */
 .layout-tab-bar .item__icon>img, .layout-tab-bar .item__icon>svg {
     height: 16px;
@@ -96,7 +102,7 @@ li.item.item--pin.item--focus:after {
     height: 12px;
 }
 
-
+/* 折叠的标签页页正常显示文字 */
 .layout-tab-bar .item--pin .item__text {
     display: block !important;
 }

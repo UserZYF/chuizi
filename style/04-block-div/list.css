@@ -1,3 +1,4 @@
+/* 设置列表左边小竖线的样式 */
 .protyle-wysiwyg [data-node-id].li>[data-node-id]:before {
     content: "";
     position: absolute;
@@ -21,7 +22,7 @@
 /* -------------------------列表悬浮------------------------ */
 /* 大圆背景 */
 .protyle-wysiwyg [data-node-id].li>.protyle-action:hover:after {
-    background-color: rgba(34, 34, 34, 0.2) !important;
+    background-color: var(--b3-theme-primary-lightest) !important;
     border-radius: var(--b3-border-radius-half-round);
 }
 
@@ -34,7 +35,7 @@
 /* -------------------------列表折叠------------------------ */
 /* 大圆背景 */
 .protyle-wysiwyg [data-node-id].li[fold="1"]>.protyle-action:after {
-    background-color: rgba(34, 34, 34, 0.2) !important;
+    background-color: var(--b3-theme-primary-lightest) !important;
     border-radius: var(--b3-border-radius-half-round);
 }
 
@@ -61,9 +62,9 @@
 }
 
 /* ————————————————————减小前面符号·的大小———————————————————— */
-.list[data-node-id][data-type="NodeList"] .protyle-action>svg {
+/* .list[data-node-id][data-type="NodeList"] .protyle-action>svg {
     width: 11px;
-}
+} */
 
 /* -------------------------列表折叠 END------------------------ */
 /* ----------------------------------列表 END--------------------------------------- */
@@ -136,3 +137,95 @@ div[fold="1"] .protyle-action.protyle-action--task {
 }
 
 /* ---------------------—---------------------复选框（待办事项）END------------------------------------------------ */
+
+
+/* 首先解除图标默认大小的限制 */
+.protyle-wysiwyg [data-node-id].li>.protyle-action svg {
+    height: 18px;
+}
+
+/* 图标颜色 */
+/* 01 */
+.list[data-subtype="u"]>.li[data-subtype="u"]>.protyle-action svg {
+    height: 18px;
+}
+
+/* 02 */
+.list[data-subtype="u"]>.li[data-subtype="u"] .li[data-subtype="u"]>.protyle-action svg {
+    height: 16px
+}
+
+/* 03 */
+.list[data-subtype="u"]>.li[data-subtype="u"] .li[data-subtype="u"] .li[data-subtype="u"]>.protyle-action svg {
+    height: 14px;
+}
+
+/* 04 */
+.list[data-subtype="u"]>.li[data-subtype="u"] .li[data-subtype="u"] .li[data-subtype="u"] .li[data-subtype="u"]>.protyle-action svg {
+    height: 12px;
+}
+
+
+/* 文字颜色 */
+.list[data-subtype="u"]>.li[data-subtype="u"] {
+    color: #645647;
+}
+
+.list[data-subtype="u"]>.li[data-subtype="u"] .li[data-subtype="u"] {
+    color: #6e5f4e;
+}
+
+.list[data-subtype="u"]>.li[data-subtype="u"] .li[data-subtype="u"] .li[data-subtype="u"] {
+    color: #786755;
+}
+
+.list[data-subtype="u"]>.li[data-subtype="u"] .li[data-subtype="u"] .li[data-subtype="u"] .li[data-subtype="u"] {
+    color: #82705c;
+}
+
+
+/* 列表中标题样式 */
+
+.list div[data-type="NodeHeading"] {
+    color: var(--b3-theme-on-background) !important;
+    font-size: 1em !important;
+    font-weight: 550;
+}
+
+.list div[data-type="NodeHeading"]::after {
+    position: absolute;
+    font-size: 80%;
+    top: 0.1em;
+    left: -2.7em;
+    font-family: var(--b3-font-family-code);
+}
+
+.list .h1::after {
+    content: "1";
+    color: var(--b3-font-color1);
+}
+
+.list .h2::after {
+    content: "2";
+    color: var(--b3-font-color2);
+}
+
+.list .h3::after {
+    content: "3";
+    color: var(--b3-font-color3);
+}
+
+.list .h4::after {
+    content: "4";
+    color: var(--b3-font-color4);
+}
+
+.list .h5::after {
+    content: "5";
+    color: var(--b3-font-color5);
+}
+
+.list .h6::after {
+    content: "6";
+    color: var(--b3-font-color6);
+}

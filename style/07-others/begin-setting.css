@@ -17,7 +17,7 @@
 /* ————————————————————设置滚动条样式——————————————————__ */
 ::-webkit-scrollbar-thumb {
     background-color: var(--b3-scroll-color);
-    border-radius: var(--b3-border-radius-half-round);
+    border-radius: 1px;
 }
 
 
@@ -47,6 +47,7 @@ textarea.b3-text-field.fn__flex-1 {
     resize: none;
 }
 
+/* 设置块与块之间的间隔 */
 .fn__flex-1.fn__flex [data-type='wnd'] {
     min-height: 0%;
     margin: 12px;
@@ -58,7 +59,7 @@ textarea.b3-text-field.fn__flex-1 {
     background-image: url('../../src/background1.jpg');
 }
 
-
+/* 设置块与块之间分割线的样式 */
 .layout__resize--lr {
     width: 2px;
     margin: 0 -6px;
@@ -75,4 +76,23 @@ textarea.b3-text-field.fn__flex-1 {
 
 ::-webkit-scrollbar-track {
     background-color: #f4f0e4;
+}
+
+
+/* --------------------------------------------------鼠标样式----------------------------------------------- */
+/* ——————————————————————鼠标光标选中文本样式———————————————————————— */
+*:not(.pdfViewer)::selection {
+    background-color: var(--b3-theme-primary);
+    color: white;
+}
+
+/* ————————————————————————鼠标划选区域————————————————————————————*/
+.protyle-select {
+    background-color: transparent !important;
+}
+
+
+/* ————————————————————————————选中块—————————————————————————————— */
+.protyle-wysiwyg--select, .protyle-wysiwyg--select .hljs {
+    background-color: var(--b3-theme-hover2) !important;
 }

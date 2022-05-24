@@ -5,13 +5,19 @@
     border-left-color: transparent;
     color: #b4a08e;
     background-color: transparent;
-    text-decoration: 2px solid var(--b3-table-border-color) underline;
     text-underline-offset: 2px;
     padding: 8px 20px 8px 20px;
     background-color: #fbf7ed;
     border-radius: 3px;
     box-shadow: 0 0 4px #b4a08e4d;
     text-align: justify;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* 给引用中的段落文字设置下划线 */
+.protyle-wysiwyg [data-node-id].bq:not(div.list div.bq) .p:not(.list .p) {
+    text-decoration: 2px solid var(--b3-table-border-color) underline;
 }
 
 .protyle-wysiwyg [data-node-id].bq:not(div.list div.bq) {
@@ -32,7 +38,8 @@ div.list div.bq {
 }
 
 div.list div.bq div.p {
-    padding: 4px 0 4px 12px;
+    padding: 4px 12px 4px 12px;
+    text-align: justify;
 }
 
 div.list div.bq div[data-type="NodeHeading"] {

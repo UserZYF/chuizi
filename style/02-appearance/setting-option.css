@@ -83,3 +83,10 @@ a#appearanceOpenIcon:hover {
 .b3-card svg.svg.fn__flex-center {
     color: #80808080;
 }
+
+
+/* ————————————————————————————————————————数据历史———————————————————————————————————————————— */
+/* 设置数据历史界面左侧的背景颜色（不设置的话背景就是木纹背景） */
+.b3-dialog__container ul.b3-list.b3-list--background {
+    background-color: #fbf7ed;
+}

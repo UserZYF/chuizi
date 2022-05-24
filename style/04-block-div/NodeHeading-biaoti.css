@@ -1,15 +1,6 @@
 /* ——————————————————————————文档标题样式—————————————————————————— */
 .protyle-title__input {
     background-color: transparent;
-    /* padding-left: 0px;
-    margin-left: 0px; */
-    line-height: 1.3 !important;
-}
-
-/* 设置标题左边icon的样式 */
-.protyle-title__icon {
-    top: 1em;
-    left: 0px;
 }
 
 .protyle-title.protyle-wysiwyg--attr span svg {
@@ -18,25 +9,14 @@
     color: #80808080;
 }
 
-/* 设置标题宽度 */
-.protyle-title.protyle-wysiwyg--attr {
-    max-width: 19cm;
-    margin: 4px auto 4px !important;
-    padding-left: 1cm !important;
-    padding-right: 1cm !important;
-}
 
-/* 修改头图emoji位置 */
-.protyle-background .protyle-background__iconw {
-    left: max(calc((100% - min(1380px, max(710px, 40vw))) / 2), 1cm) !important;
-}
 
 /* ——————————————————————————H1-H6 标题样式—————————————————————————— */
 /* 标题居左对齐，采用彩虹色前6色 红橙黄绿青蓝 */
 .protyle-wysiwyg [data-node-id].h1,
 .b3-typography h1 {
     text-align: left;
-    font-size: 1.6em !important;
+    font-size: 1.6em;
     /* font-weight: bold; */
     position: relative;
     z-index: 0;
@@ -46,7 +26,7 @@
 
 .protyle-wysiwyg [data-node-id].h2,
 .b3-typography h2 {
-    font-size: 1.5em !important;
+    font-size: 1.5em;
     /* font-weight: 550; */
     position: relative;
     z-index: 0;
@@ -55,7 +35,7 @@
 
 .protyle-wysiwyg [data-node-id].h3,
 .b3-typography h3 {
-    font-size: 1.4em !important;
+    font-size: 1.4em;
     /* font-weight: 550; */
     position: relative;
     z-index: 0;
@@ -64,7 +44,7 @@
 
 .protyle-wysiwyg [data-node-id].h4,
 .b3-typography h4 {
-    font-size: 1.3em !important;
+    font-size: 1.3em;
     /* font-weight: 550; */
     position: relative;
     z-index: 0;
@@ -73,7 +53,7 @@
 
 .protyle-wysiwyg [data-node-id].h5,
 .b3-typography h5 {
-    font-size: 1.2em !important;
+    font-size: 1.2em;
     /* font-weight: 550; */
     position: relative;
     z-index: 0;
@@ -82,7 +62,7 @@
 
 .protyle-wysiwyg [data-node-id].h6,
 .b3-typography h6 {
-    font-size: 1.1em !important;
+    font-size: 1.1em;
     /* font-weight: 550; */
     position: relative;
     z-index: 0;

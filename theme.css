@@ -31,7 +31,7 @@
 /* 修改设置界面样式 */
 @import url("style/02-appearance/setting-option.css");
 /* 修改警告界面样式 */
-@import url("style/02-appearance/warning-color.css");
+/* @import url("style/02-appearance/warning-color.css"); */
 
 
 /* ————————————————————行内元素———————————————————— */
@@ -69,6 +69,8 @@
 @import url("style/04-block-div/image.css");
 /* 修改列表样式 */
 @import url("style/04-block-div/list.css");
+/* 修改待办事项样式 */
+@import url("style/04-block-div/task.css");
 /* 修改代码块样式 */
 @import url("style/04-block-div/code-block.css");
 /* 修改超级块样式 */
@@ -99,3 +101,10 @@
 @import url(/widgets/custom.css);
 
 /* ----------------------------------------------------引入结束---------------------------------------------------------- */
+
+
+@font-face {
+    font-family: '江城圆体';
+    font-style: normal;
+    src: url('fonts/江城圆体400W.ttf');
+}

@@ -2,7 +2,7 @@
 
 /* 设置引用块格式 */
 .protyle-wysiwyg [data-node-id] span[data-type='block-ref'] {
-    text-decoration: 2px solid #80808080 underline;
+    text-decoration: 1px solid #80808080 underline;
     text-underline-offset: 2px;
     color: inherit;
 }
@@ -17,7 +17,7 @@
     position: relative;
     background-repeat: no-repeat;
     background-size: 1.2em 1.2em;
-    background-image: url('../../src/page2.svg');
+    background-image: url('../../src/chuizi1.png');
     width: 1.2em;
     height: 1.2em;
     margin-right: 0.2em;

@@ -1,26 +1,14 @@
-/* ------------------------------------------标签 tag--------------------------------------------- */
-.protyle-wysiwyg [data-node-id] span[data-type='tag']:not(:empty) {
-    color: var(--b3-theme-primary);
-    background-color: transparent;
-    border-radius: 50px;
-    border: 1px solid var(--b3-table-border-color) !important;
-    box-sizing: border-box;
-    padding-left: 6px;
-    padding-right: 6px;
-    margin-right: 4px;
-    margin-left: 4px;
-}
-
-.protyle-wysiwyg [data-node-id] span[data-type="tag"] {
-    border-bottom: none;
-}
-
-/* ————————————————————标签#号———————————————————— */
-.protyle-wysiwyg [data-node-id] span[data-type='tag']:not(:empty)::before {
-    content: "◎";
-}
-
-.protyle-wysiwyg [data-node-id] span[data-type='tag']:hover {
-    color: white;
-    background-color: var(--b3-theme-primary);
+.protyle-wysiwyg [data-node-id] span[data-type=tag] {
+    border: none;
+    background-image: url(../../src/tag.png);
+    background-repeat: no-repeat;
+    background-size: 1em 1em;
+    background-position: 0.2em 0.05em;
+    padding-left: 1.2em;
+    /* outline: 1px solid var(--b3-theme-primary); */
+    border-radius: 5px;
+    margin-right: 3px;
+    color: var(--b3-theme-primary) !important;
+    background-color: #ffeec5;
+    padding-right: 3px;
 }

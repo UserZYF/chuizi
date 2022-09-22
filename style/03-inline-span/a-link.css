@@ -4,18 +4,18 @@
     display: inline-block;
     position: relative;
     background-repeat: no-repeat;
-    background-size: 1em 1em;
-    background-image: url('../../src/net.svg');
+    background-size: 1.2em 1.2em;
+    background-image: url('../../src/link.png');
     content: "";
     top: 0.15em;
-    width: 1em;
-    height: 1em;
-    margin: 0 0.2em;
+    width: 1.2em;
+    height: 1.2em;
+    margin: 0 0.1em 0 0.3em;
 }
 
 .protyle-wysiwyg [data-node-id] span[data-type="a"]:not(:empty) {
     border-bottom-color: transparent;
-    text-decoration: 0.1em solid #0081c2 underline;
+    text-decoration: 1px solid #80808080 underline;
     text-underline-offset: 0.1em;
     color: var(--b3-theme-on-background);
 }
@@ -24,7 +24,7 @@
 
 /* 集市中说明文档链接样式 */
 .item__readme.b3-typography a {
-    border-bottom: 1px solid #0081c2;
+    border-bottom: 1px solid #80808080;
 }
 
 .item__readme.b3-typography a:hover {

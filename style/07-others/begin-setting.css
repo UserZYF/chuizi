@@ -17,7 +17,7 @@
 /* ————————————————————设置滚动条样式——————————————————__ */
 ::-webkit-scrollbar-thumb {
     background-color: var(--b3-scroll-color);
-    border-radius: 1px;
+    border-radius: 50px;
 }
 
 

@@ -21,12 +21,24 @@
 /* 给左侧dock栏设置右边框 */
 div#dockLeft {
     border-right: 1px solid rgba(0, 0, 0, .07);
+    margin-top: 12px;
+    margin-bottom: 12px;
+    margin-left: 12px;
+    height: calc(100% - 24px);
+    border-radius: 4px;
+    box-shadow: 0 0 2px rgb(126 50 0 / 10%) inset, 0 1px 4px rgb(58 15 0 / 20%);
 }
 
 
 /* 给右侧dock栏设置左边框 */
 div#dockRight {
     border-left: 1px solid var(--b3-border-color);
+    margin-top: 12px;
+    margin-bottom: 12px;
+    margin-right: 12px;
+    height: calc(100% - 24px);
+    border-radius: 4px;
+    box-shadow: 0 0 2px rgb(126 50 0 / 10%) inset, 0 1px 4px rgb(58 15 0 / 20%);
 }
 
 div#dockLeft .dock__item,

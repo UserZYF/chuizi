@@ -1,6 +1,5 @@
 /* ————————————————————大纲等文字显示主题色———————————————————— */
 .block__logo {
-    font-weight: bold;
     color: var(--b3-theme-primary-lightest);
 }
 
@@ -17,10 +16,10 @@
 
 /* ————————————————————设置界面字体大小，不包括正文，正文字体大小在编辑器那里选择———————————————————— */
 /* 主要修改的是文档树字体大小 */
-body {
+/* body {
     font-size: 15.5px;
     font-weight: normal;
-}
+} */
 
 /* -----------------------------------------------------------取消文档树、大纲、反向链接左边的icon，感觉显示重复了 */
 .block__logo svg {
@@ -128,15 +127,7 @@ span.b3-list-item__icon.b3-tooltips.b3-tooltips__n {
 }
 
 /* ----------------------------------------修改文档树新建按钮的样式----------------------------------------- */
-/* 隐藏文档树后面的引用计数 */
-span.popover__block.counter.b3-tooltips.b3-tooltips__nw {
-    display: none;
-}
 
-/* 隐藏大纲后面的引用计数 */
-.fn__flex-1.fn__flex-column.file-tree.sy__outline span.counter {
-    display: none;
-}
 
 /* ————————————————————更改新建按钮样式———————————————————— */
 /* 隐藏原来的新建按钮的样式 */

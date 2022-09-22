@@ -8,26 +8,35 @@
     overflow: hidden;
 }
 
+/* 消除思源笔记光标定位在列表最后一行和下一行空行时，因为面包屑内容高度而导致的编辑区域上下乱动的bug */
+/* 目前会导致产生新的bug,在列表中，列表层级过长时，如果限制此选择器高度，则由此而产生的分栏会导致需要鼠标上下滚动才能看到完整面包屑 */
+/* 但根本原因还是列表中的标题会在面包屑中出现两次，一次是作为列表出现，一次是作为标题出现，标题出现的根本没有必要 */
+/* 目前最可能的解决方法是将上下滚动修改为左右滚动 */
+.protyle-breadcrumb__bar {
+    height: 30px;
+}
+
+/* -------------------------------------------------面包屑导航样式 END-------------------------------------------- */
+
 /* 调整面包屑条目颜色（依次为符号icon，小三角标志，文字颜色） */
-svg.popover__block,
-.protyle-breadcrumb__arrow,
-.protyle-breadcrumb__item {
+.protyle-breadcrumb svg.popover__block,
+.protyle-breadcrumb .protyle-breadcrumb__arrow,
+.protyle-breadcrumb .protyle-breadcrumb__item {
     color: #55555a4d;
 }
 
-/* 设置聚焦的块前面的符号颜色为深色 */
+/* 设置聚焦的块前面的符号颜色和文字颜色为主色 */
+span.protyle-breadcrumb__item.protyle-breadcrumb__item--active,
 span.protyle-breadcrumb__item.protyle-breadcrumb__item--active svg.popover__block {
-    color: var(--b3-theme-on-background);
+    color: var(--b3-theme-primary);
 }
 
 /* 鼠标在面包屑上悬浮时更改文字和文字前面icon的颜色 */
 .protyle-breadcrumb__item:hover {
     color: var(--b3-theme-on-background) !important;
-    background-color: rgba(154, 153, 155, .08) !important;
+    /* background-color: rgba(154, 153, 155, .08) !important; */
 }
 
 .protyle-breadcrumb__item:hover svg.popover__block {
     color: var(--b3-theme-on-background) !important;
 }
-
-/* -------------------------------------------------面包屑导航样式 END-------------------------------------------- */
